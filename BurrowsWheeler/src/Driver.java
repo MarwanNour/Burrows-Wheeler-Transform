@@ -1,12 +1,15 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * Driver class containing the main function for the project
+ * 
+ * @author Marwan Nour marwan.nour@polytechnique.edu
+ *
+ */
 public class Driver {
 
 	public static void main(String[] args) {
-
-//			String input_str = "^BANANA";
-//			String input_str = "SIX.MIXED.PIXIES.SIFT.SIXTY.PIXIE.DUST.BOXES";
 
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Please Input a String: ");
@@ -37,13 +40,22 @@ public class Driver {
 			System.out.print(R.get(i) + ", ");
 		}
 		System.out.println();
-		
+
 		// Huffman Encoding
 		System.out.println("\n------------------ HUFFMAN ENCODING -------------------");
 		Huffman.buildHuffmanTree(input_str);
-		System.out.println(R.toString());
+		System.out.println();
 		
-		Huffman.buildHuffmanTree(R.toString());
+		System.out.println("MTF STRING = " + R.toString());
+		String mtf = "";
+		for(int i = 0; i < R.size(); i++) {
+			mtf+= (char) (R.get(i).intValue() + 32);
+		}
+		System.out.println(mtf);
+		
+
+//		Huffman.buildHuffmanTree(R.toString()); // Don't run huffman on the array itself (useless commas, spaces and brackets)
+		Huffman.buildHuffmanTree(mtf);
 		
 
 		// MTF Decoding

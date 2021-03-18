@@ -9,7 +9,7 @@ import java.util.TreeSet;
  * 
  * Reference: https://rosettacode.org/wiki/Burrows%E2%80%93Wheeler_transform#Java
  * 
- * @author Marwan Nour
+ * @author Marwan Nour marwan.nour@polytechnique.edu
  * 
  */
 public class BWT {

@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * 
  * Reference: https://rosettacode.org/wiki/Move-to-front_algorithm#Java
  * 
- * @author Marwan Nour
+ * @author Marwan Nour marwan.nour@polytechnique.edu
  *
  */
 public class MTF {

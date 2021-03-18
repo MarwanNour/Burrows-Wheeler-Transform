@@ -4,7 +4,7 @@
  *
  * Reference: https://www.techiedelight.com/huffman-coding/
  * 
- * @author Marwan Nour
+ * @author Marwan Nour marwan.nour@polytechnique.edu
  *
  */
 public class HuffmanTreeNode {
